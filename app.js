@@ -5,7 +5,7 @@ const port = 5000;
     // params search
     const langs = ["java", "python", "javascript", "css", "dotnet"];
     const order = "desc";
-    const sort = "starts";
+    const sort = "stars";
 
     let array_langs = [];
 
