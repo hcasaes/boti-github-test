@@ -1,0 +1,24 @@
+{
+  "name": "boti-github-test",
+  "version": "1.0.0",
+  "description": "teste boticario",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HCasaes/boti-github-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HCasaes/boti-github-test/issues"
+  },
+  "homepage": "https://github.com/HCasaes/boti-github-test#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
