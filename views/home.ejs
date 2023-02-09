@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<div class="header">
+		<h1 class="header__title">Repositórios Destaques do GitHub</h1>
+	</div>
+
+	<div class="row">
+		<% for(let [index, lang] of array_langs.entries()){ %>
+			<div class="card">
+				<h2 class="card__lang">
+					<%= lang.items[1].name %>
+				</h2>
+				<div>
+					<p><strong><i class="fa-solid fa-code"></i></strong>
+						<%= lang.items[0].display_name %>
+					</p>
+				</div>
+				<div>
+					<p><i class="fa-brands fa-github"></i> <a class="card__link" href="https://github.com/topics/<%= lang.items[0].name %>" target="_blank">
+							Ver tópico
+						</a></p>
+				</div>
+			</div>
+			<% } %>
+	</div>
+
+</body>
+
+</html>
